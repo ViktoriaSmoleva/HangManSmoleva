@@ -59,7 +59,7 @@ public class HangMan {
             System.out.println(maskWord(hiddenWord, guessedLetters.toString()));
             System.out.println("Введите букву: ");
             char c = scanner.next().toLowerCase().charAt(0);
-
+            scanner.nextLine();
             if (hiddenWord.toLowerCase().indexOf(c) >= 0) {
                 if (guessedLetters.indexOf(String.valueOf(c)) < 0) {
                     System.out.println("Есть такая буква в слове!");
